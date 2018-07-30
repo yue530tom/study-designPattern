@@ -3,13 +3,13 @@ package com.designpattern.visitor;
 public class VisitorB implements Visitor {
 	  @Override
 	    public void visit(NodeA node) {
-	        System.out.println(node.operationA());
+	        System.out.println("VisitorB:"+node.operationA());
 	    }
 	    /**
 	     * 对应于NodeB的访问操作
 	     */
 	    @Override
 	    public void visit(NodeB node) {
-	        System.out.println(node.operationB());
+	        System.out.println("VisitorB:"+node.operationB());
 	    }
 }
